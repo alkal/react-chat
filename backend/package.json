@@ -1,0 +1,28 @@
+{
+  "name": "react-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently -k -p '[{name}]' -n 'DB,API-POST-SERVICES' -c 'bgGreen.bold,bgCyan.bold' 'npm run watch' 'cd services/api-post-services && npm start'",
+    "watch": "nodemon index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.19.2",
+    "axios": "^0.24.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.3.0",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.5.0",
+    "graphql-subscriptions": "^2.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.13",
+    "nodemailer": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

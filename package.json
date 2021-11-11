@@ -1,22 +1,56 @@
 {
-  "name": "react-chat",
+  "name": "root",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "nodemon index"
+    "backend": "cd backend && npm start",
+    "client": "cd client && npm start"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alkal/react-chat.git"
+  },
+  "author": "alkal",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alkal/react-chat/issues"
+  },
+  "homepage": "https://github.com/alkal/react-chat#readme",
   "dependencies": {
-    "apollo-server": "^2.19.2",
-    "bcryptjs": "^2.4.3",
-    "graphql": "^15.5.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.11.13"
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.15"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "@babel/cli": "^7.11.5",
+    "@babel/core": "^7.11.5",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/plugin-transform-object-assign": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@babel/register": "^7.11.5",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-istanbul": "^6.0.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-optimize-clsx": "^2.6.1",
+    "babel-plugin-preval": "^5.0.0",
+    "babel-plugin-react-remove-properties": "^0.3.0",
+    "babel-plugin-tester": "^9.2.0",
+    "babel-plugin-transform-dev-warning": "^0.1.1",
+    "babel-plugin-transform-react-constant-elements": "^6.23.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-wesbos": "1.0.1",
+    "eslint-plugin-html": "^6.0.3",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "prettier": "^2.4.1"
   }
 }
